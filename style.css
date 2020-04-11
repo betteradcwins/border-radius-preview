@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    margin: 100px auto;
+}
+
+header > div {
+    display: flex;
+    flex-direction: row;
+
+    width: 50vmin;
+
+    align-items: center;
+}
+
+header span, header button {
+    background-color: #ccc;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header span {    
+    height: 47px;
+    width: 100%;
+
+    border-right: solid 2px #fff;
+}
+
+header button {
+    border: none;
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    padding: 10px;
+
+}
+
+header button:hover {
+    cursor: pointer;
+
+    background-color: #aaa;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+.generator {
+    position: relative;
+    
+    margin: 0 auto;
+
+    width: 50vmin;
+    height: 50vmin;
+
+    border: dashed 2px #000;
+}
+
+.preview {
+    background-color: yellow;
+
+    width: 100%;
+    height: 100%;
+}
+
+#top, #right, #bottom, #left {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #000;
+    border: solid 4px #ccc;
+}
+
+#top {
+    top: 0;
+    left: 50%;
+    transform: 
+        translateY(-50%)
+        translateX(-50%);
+}
+
+#right {
+    right: 0;
+    top: 50%;
+    transform: 
+        translateY(-50%)
+        translateX(50%);
+}
+
+#bottom {
+    left: 50%;
+    transform: 
+        translateY(-50%)
+        translateX(-50%);
+}
+
+#left {
+    top: 50%;
+    transform: 
+        translateY(-50%)
+        translateX(-50%);
+}
+
+
+footer {
+    border-top: solid 1px #f0f0f0;
+    padding: 16px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer span {
+    font-family: 'RobotoMono', monospace;
+    font-size: 0.9rem;
+}
+
+
+
+@media(max-width:700px) {
+    header > div {
+        flex-direction: column;
+    }
+
+    header span {
+        border: none;
+        border-bottom: solid 2px #fff;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    header button {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+}
