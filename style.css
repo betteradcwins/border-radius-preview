@@ -39,6 +39,11 @@ header span {
     border-right: solid 2px #fff;
 }
 
+header span p {
+    font-size: 1.2rem;
+    margin: 10px 5px;
+}
+
 header button {
     border: none;
 
@@ -142,6 +147,10 @@ footer span {
         border-bottom: solid 2px #fff;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+    }
+
+    header span p {
+        font-size: 1rem;
     }
 
     header button {
