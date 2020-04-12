@@ -82,6 +82,17 @@ main {
     height: 100%;
 }
 
+main span::before {
+    content: "";
+
+    position: absolute;
+
+    width: 5rem;
+    height: 5rem;
+    
+    transform: translate(-40%, -40%);
+}
+
 #top, #right, #bottom, #left {
     display: block;
     position: absolute;
