@@ -1,6 +1,6 @@
 # Border-radius Previewer
 
-[Deployed at Github pages](https://betteradcwins.github.io/border-radius-preview/)
+[Deployed at Github pages](https://brenohof.github.io/border-radius-preview/)
 
 **Tier:** 1-Beginner
 
